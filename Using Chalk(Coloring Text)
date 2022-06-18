@@ -11,8 +11,12 @@ console.log(chalk.blue("Hello")+"World"+chalk.red("!"))
 
 console.log(chalk.green.bold("one"))
 
+console.log(chalk.green.inverse.bold("one"))
+
 𝑶/𝑷
+
 Hii
 HelloWorld!
+one
 one
 //Actually it changes colors but github didnt support
