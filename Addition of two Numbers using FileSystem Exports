@@ -1,0 +1,21 @@
+// Everything must be in the same directory
+
+𝒂𝒑𝒑.𝒋𝒔
+
+const add=require("./addition.js")
+
+const ans=add(10,20)
+
+console.log(ans)
+
+𝒂𝒅𝒅𝒊𝒕𝒊𝒐𝒏.𝒋𝒔
+
+console.log("I am  in new file")
+
+const add=function(x,y){
+    return x+y
+}
+
+module.exports=add
+
+
