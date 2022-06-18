@@ -1,0 +1,14 @@
+𝒂𝒑𝒑.𝒋𝒔
+
+const getnotes=require("./notes.js")
+
+const notes=getnotes()
+console.log(notes)
+
+𝒏𝒐𝒕𝒆𝒔.𝒋𝒔
+
+var setnotes=function(){
+    return "Your Notes....."
+}
+
+module.exports=setnotes
