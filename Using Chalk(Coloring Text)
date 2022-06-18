@@ -1,0 +1,18 @@
+ First type : 𝗻𝗽𝗺 𝗶𝗻𝘀𝘁𝗮𝗹𝗹 𝗰𝗵𝗮𝗹𝗸
+
+𝗮𝗽𝗽.𝗷𝘀
+
+const chalk=require("chalk")
+var red=chalk.red("Hii")
+
+console.log(red)
+
+console.log(chalk.blue("Hello")+"World"+chalk.red("!"))
+
+console.log(chalk.green.bold("one"))
+
+𝑶/𝑷
+Hii
+HelloWorld!
+one
+//Actually it changes colors but github didnt support
