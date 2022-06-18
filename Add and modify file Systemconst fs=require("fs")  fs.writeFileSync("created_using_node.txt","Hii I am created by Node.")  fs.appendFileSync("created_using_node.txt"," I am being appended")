@@ -1,0 +1,9 @@
+const fs=require("fs")
+
+fs.writeFileSync("created_using_node.txt","Hii I am created by Node.")     //Creates an empty file if no file is present and types the code
+
+fs.appendFileSync("created_using_node.txt"," I am being appended")        // Adds text to the file which is already written
+
+
+o/p:
+Hii I am created by Node. I am being appended
