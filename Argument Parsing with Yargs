@@ -1,0 +1,35 @@
+𝗮𝗽𝗽.𝗷𝘀
+
+const yargs=require("yargs")
+const { describe } = require("yargs")
+
+yargs.command({
+    command:"add",
+    describe:"Add a Note",
+    builder:{                       //Builder->Builder is an object which provides all options for the command to support.eg "add" command here provides options
+        title:{
+            describe:"Note Title",
+            demandOption:true,
+            type:"string"
+        },
+        body:{
+            describe:"Note Body",
+            demandOption:true,
+            type:"string"
+        }
+
+    },
+    handler: function(argv){
+        console.log("Title: "+argv.title)
+        console.log("Body: "+argv.body)
+    }
+})
+
+yargs.parse()
+
+𝗢/𝗣
+
+𝐂:\𝐔𝐬𝐞𝐫𝐬\𝐀𝐋𝐋𝐀𝐍 𝐉𝐀𝐂𝐎𝐁\𝐧𝐨𝐝𝐞𝐣𝐬\𝐧𝐨𝐝𝐞_𝐦𝐨𝐝𝐮𝐥𝐞𝐬\𝐍𝐨𝐭𝐞𝐬𝐀𝐩𝐩>  node app.js add --title="Aldeesh P Rayan" --body="I am a God Coder"
+
+𝐓𝐢𝐭𝐥𝐞: 𝐀𝐥𝐝𝐞𝐞𝐬𝐡 𝐏 𝐑𝐚𝐲𝐚𝐧
+𝐁𝐨𝐝𝐲: 𝐈 𝐚𝐦 𝐚 𝐆𝐨𝐝 𝐂𝐨𝐝𝐞𝐫
