@@ -1,0 +1,67 @@
+𝐚𝐩𝐩.𝐣𝐬
+
+const yargs=require("yargs")
+const { describe } = require("yargs")
+
+
+yargs.command({
+    command:"add",                          //  Command name we type in Terminal
+    describe:"Add a Note",                 //   Description of that command when we use help
+    handler:function(){                    //   What the command needs to perform
+        console.log("Adding a Note")
+    }
+})
+
+yargs.command({
+    command:"remove",
+    describe:"Remove a Note",
+    handler:function(){
+        console.log("Removing a Note")
+    }
+})
+
+yargs.command({
+    command:"list",
+    describe:"List a Note",
+    handler:function(){
+        console.log("Listing a Note")
+    }
+})
+
+yargs.command({
+    command:"read",
+    describe:"Describe a Note",
+    handler:function(){
+        console.log("Describing a Note")
+    }
+})
+
+console.log(yargs.argv)
+
+
+
+
+𝗢/𝗣-𝟭
+
+𝑪:\𝑼𝒔𝒆𝒓𝒔\𝑨𝑳𝑳𝑨𝑵 𝑱𝑨𝑪𝑶𝑩\𝒏𝒐𝒅𝒆𝒋𝒔\𝒏𝒐𝒅𝒆_𝒎𝒐𝒅𝒖𝒍𝒆𝒔\𝑵𝒐𝒕𝒆𝒔𝑨𝒑𝒑> node app.js add
+
+𝑨𝒅𝒅𝒊𝒏𝒈 𝒂 𝑵𝒐𝒕𝒆
+{ _: [ '𝒂𝒅𝒅' ], '$0': '𝒂𝒑𝒑.𝒋𝒔' }
+
+𝑪:\𝑼𝒔𝒆𝒓𝒔\𝑨𝑳𝑳𝑨𝑵 𝑱𝑨𝑪𝑶𝑩\𝒏𝒐𝒅𝒆𝒋𝒔\𝒏𝒐𝒅𝒆_𝒎𝒐𝒅𝒖𝒍𝒆𝒔\𝑵𝒐𝒕𝒆𝒔𝑨𝒑𝒑> node app.js remove
+
+𝑹𝒆𝒎𝒐𝒗𝒊𝒏𝒈 𝒂 𝑵𝒐𝒕𝒆
+{ _: [ '𝒓𝒆𝒎𝒐𝒗𝒆' ], '$0': '𝒂𝒑𝒑.𝒋𝒔' }
+
+
+𝗢/𝗣-𝟮
+
+𝑪:\𝑼𝒔𝒆𝒓𝒔\𝑨𝑳𝑳𝑨𝑵 𝑱𝑨𝑪𝑶𝑩\𝒏𝒐𝒅𝒆𝒋𝒔\𝒏𝒐𝒅𝒆_𝒎𝒐𝒅𝒖𝒍𝒆𝒔\𝑵𝒐𝒕𝒆𝒔𝑨𝒑𝒑> node app.js --help
+
+Commands:
+  app.js add     Add a Note
+  app.js remove  Remove a Note
+  app.js list    List a Note
+  app.js read    Describe a Note
+
+
