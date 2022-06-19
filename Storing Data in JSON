@@ -1,0 +1,30 @@
+𝐂𝐫𝐞𝐚𝐭𝐞 𝐚 𝐧𝐞𝐰 𝐟𝐢𝐥𝐞 𝐧𝐚𝐦𝐞𝐝 𝟏-𝐣𝐬𝐨𝐧.𝐣𝐬(𝐀𝐧𝐲 𝐣𝐚𝐯𝐚𝐬𝐜𝐫𝐢𝐩𝐭 𝐟𝐢𝐥𝐞)
+
+const fs=require("fs")
+
+const book={
+    name:"Allan",
+    planet:"Earth",
+    age:"30"
+}
+
+const bookJSON=JSON.stringify(book)                 // Converts String to Java object
+
+fs.writeFileSync("1-JSON.json",bookJSON)           // Creates a new json file and stores the string onto it in json format
+
+buffereddata=fs.readFileSync("1-JSON.json")        // Reading JSON data
+const dataJSON=buffereddata.toString()            // Converts the Java object to String
+const data=JSON.parse(dataJSON)                   // parse it into json object
+
+data.name="Allan Jacob"                           // Modifying Contents
+data.age="20"
+
+const userJSON=JSON.stringify(data)
+fs.writeFileSync("1-JSON.json",userJSON)
+console.log(data.name)
+
+
+𝐎/𝐏
+𝐂:\𝐔𝐬𝐞𝐫𝐬\𝐀𝐋𝐋𝐀𝐍 𝐉𝐀𝐂𝐎𝐁\𝐧𝐨𝐝𝐞𝐣𝐬\𝐧𝐨𝐝𝐞_𝐦𝐨𝐝𝐮𝐥𝐞𝐬\𝐍𝐨𝐭𝐞𝐬𝐀𝐩𝐩\𝐩𝐥𝐚𝐲𝐠𝐫𝐨𝐮𝐧𝐝> node 1-json.js
+
+𝐀𝐥𝐥𝐚𝐧 𝐉𝐚𝐜𝐨𝐛
